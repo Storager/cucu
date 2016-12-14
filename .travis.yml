@@ -6,6 +6,7 @@ install:
   - gem install cucumber
   - gem install capybara
   - gem install selenium-client
+  - gem install selenium-webdriver
 
 script:
   - DISPLAY=localhost:99 xvfb-run cucumber features/
