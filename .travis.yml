@@ -4,6 +4,7 @@ install:
   - rvm install 2.3.1 --default
   - gem install bundler
   - gem install cucumber
+  - gem install capybara
   - gem install selenium-client
 
 script:
