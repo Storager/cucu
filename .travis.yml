@@ -1,6 +1,6 @@
 language: ruby
 install:
-  - apt-get install xvfb
+  - sudo apt-get install xvfb
   - rvm install 2.3.1 --default
   - gem install bundler
   - gem install cucumber
