@@ -1,6 +1,10 @@
 language: ruby
 install:
+  - apt-get install xvfb
   - rvm install 2.3.1 --default
   - gem install bundler
+  - gem install cucumber
+  - gem install
+  - bundle install selenium-client
 script:
-- bundle install
+  - cucumber features/
