@@ -1,5 +1,6 @@
 language: ruby
 install:
   - rvm install 2.3.1 --default
+  - gem install bundler
 script:
 - bundle install
