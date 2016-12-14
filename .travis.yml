@@ -7,6 +7,9 @@ install:
   - gem install capybara
   - gem install selenium-client
   - gem install selenium-webdriver
+  - wget -c "https://github.com/mozilla/geckodriver/releases/download/v0.11.1/geckodriver-v0.11.1-linux64.tar.gz"
+  - tar -xvvf geckodriver-v0.11.1-linux64.tar.gz
+  - PATH=$PATH:./
 
 script:
   - DISPLAY=localhost:99 xvfb-run cucumber features/
