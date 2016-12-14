@@ -8,4 +8,4 @@ install:
   - gem install selenium-client
 
 script:
-  - cucumber features/
+  - DISPLAY=localhost:99 xvfb-run cucumber features/
